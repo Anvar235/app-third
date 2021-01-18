@@ -1,0 +1,303 @@
+/*******************FONT STYLE*******************/
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../font/openSans/OpenSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("../font/openSans/OpenSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../font/openSans/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("../font/openSans/OpenSans-SemiBold.ttf") format("truetype");
+}
+
+.font-family-bold {
+  font-family: "OpenSans-Bold", sans-serif;
+}
+
+.font-family-light {
+  font-family: "OpenSans-Light", sans-serif;
+}
+
+.font-family-regular {
+  font-family: "OpenSans-Regular", sans-serif;
+}
+
+.font-family-semi-bold {
+  font-family: "OpenSans-SemiBold", sans-serif;
+}
+
+/******************** COLOR STYLE ******************/
+
+$color-bg: #f1f1f1;
+$color-item: #828282;
+$color-purple: #5A077D;
+$color-green: #0cca58;
+$color-purple-2: #9c6ab1;
+
+
+
+
+
+/************************ ICONS STYLE******************/
+.icon{
+  width: 15px;
+  height: 15px;
+
+
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  display: inline-block;
+  vertical-align: sub;
+
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+
+  background-color: $color-item;
+
+  &.icon-heart{
+    mask-image: url("../icons/heart.svg");
+    -webkit-mask-image: url("../icons/heart.svg");
+  }
+  &.icon-search{
+    mask-image: url("../icons/search.svg");
+    -webkit-mask-image: url("../icons/search.svg");
+  }
+  &.icon-basket{
+    mask-image: url("../icons/shopping-cart.svg");
+    -webkit-mask-image: url("../icons/shopping-cart.svg");
+  }
+  &.icon-view{
+    mask-image: url("../icons/eye.svg");
+    -webkit-mask-image: url("../icons/eye.svg");
+  }
+  &.icon-download{
+    mask-image: url("../icons/download.svg");
+    -webkit-mask-image: url("../icons/download.svg");
+  }
+  &.icon-email{
+    mask-image: url("../icons/mail.svg");
+    -webkit-mask-image: url("../icons/mail.svg");
+  }
+  &.icon-phone{
+    mask-image: url("../icons/phone.svg");
+    -webkit-mask-image: url("../icons/phone.svg");
+  }
+  &.icon-location{
+    mask-image: url("../icons/map-pin.svg");
+    -webkit-mask-image: url("../icons/map-pin.svg");
+  }
+  &.icon-purple{
+    background-color: $color-purple;
+  }
+  &.icon-green{
+    background-color: $color-green;
+  }
+  &.icon-user{
+    mask-image: url("../icons/user.svg");
+    -webkit-mask-image: url("../icons/user.svg");
+  }
+  &.icon-dashboard{
+    mask-image: url("../icons/grid.svg");
+    -webkit-mask-image: url("../icons/grid.svg");
+  }
+  &.icon-camera{
+    mask-image: url("../icons/video.svg");
+    -webkit-mask-image: url("../icons/video.svg");
+  }
+  &.icon-audio{
+    mask-image: url("../icons/voicemail.svg");
+    -webkit-mask-image: url("../icons/voicemail.svg");
+  }
+  &.icon-users{
+    mask-image: url("../icons/users.svg");
+    -webkit-mask-image: url("../icons/users.svg");
+  }
+  &.icon-speaker{
+    mask-image: url("../icons/speaker.svg");
+    -webkit-mask-image: url("../icons/speaker.svg");
+  }
+  &.icon-feather{
+    mask-image: url("../icons/feather.svg");
+    -webkit-mask-image: url("../icons/feather.svg");
+  }
+  &.icon-book{
+    mask-image: url("../icons/columns.svg");
+    -webkit-mask-image: url("../icons/columns.svg");
+  }
+  &.icon-settings{
+    mask-image: url("../icons/settings.svg");
+    -webkit-mask-image: url("../icons/settings.svg");
+  }
+  &.icon-bookmark{
+    mask-image: url("../icons/bookmark.svg");
+    -webkit-mask-image: url("../icons/bookmark.svg");
+  }
+}
+
+
+
+/********************MAIN STYLE*********************/
+
+body {
+  background-color: $color-bg;
+
+  .navbar {
+    .navbar-brand {
+      p {
+        font-size: 12px;
+      }
+    }
+
+    .input-group {
+      width: 340px;
+      margin-left: 80px;
+
+      input, button {
+        background-color: $color-bg;
+      }
+    }
+  }
+
+  .row {
+    .a {
+      background-color: $color-purple;
+
+      .navbar-brand {
+        border: white;
+
+        img {
+          color: grey;
+          width: 40px;
+          height: 40px;
+          padding: 5px;
+          box-sizing: border-box;
+          border-radius: 5px;
+
+        }
+      }
+      .text-white{
+        p{
+          font-size: 13px;
+        }
+      }
+
+
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            height: 30px;
+            position: relative;
+            &::before{
+              content: '';
+              width: 3px;
+              height: 0;
+              background-color: #ff4c0c;
+              position: absolute;
+              left: -20px;
+              top: 0;
+              transition: height 0.3s;
+              transition-timing-function: linear;
+            }
+            &:hover:before{
+              height: 100%;
+            }
+            p{
+              font-size: 13px;
+            }
+            .icon {
+              background-color: white;
+            }
+          }
+        }
+      }
+    }
+
+    .col-10 {
+      p{
+        font-size: 12px;
+      }
+      .fff {
+        .col-3{
+          .rounded{
+            position: relative;
+            box-shadow: 2px 2px 5px grey;
+            overflow: hidden;
+            height: 110px;
+            button{
+              font-size: 10px;
+              padding: 3px;
+            }
+            .rasm{
+              width: 120px;
+              height: 120px;
+              position: absolute;
+              right: -15px;
+              bottom: -15px;
+              transform: rotate(-45deg);
+
+              opacity: 25%;
+            }
+          }
+          }
+        }
+
+      }
+      .col-8{
+        .bg-light{
+          box-shadow: 2px 2px 5px grey;
+        }
+        img{
+          width: 100%;
+        }
+      }
+      .car{
+        img{
+          width: 100%;
+        }
+        .bg-light{
+          box-shadow: 2px 2px 5px grey;
+          .box{
+            border: 1px #585a80;
+            width: 20px;
+            height: 20px;
+            background-color: #585a80;
+            border-radius: 50%;
+            margin-left: 5px;
+
+          }
+          .box2{
+            border: 1px solid lightseagreen;
+            width: 20px;
+            height: 20px;
+            background-color: lightseagreen;
+            border-radius: 50%;
+            margin-left: 5px;
+          }
+          .box3{
+            border: 1px indianred;
+            width: 20px;
+            height: 20px;
+            background-color: indianred;
+            border-radius: 50%;
+            margin-left: 5px;
+          }
+          .d-flex{
+            p{
+              font-size: 15px;
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+    }
+  }

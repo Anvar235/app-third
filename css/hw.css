@@ -1,0 +1,190 @@
+/*******************FONT STYLE*******************/
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../font/openSans/OpenSans-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("../font/openSans/OpenSans-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../font/openSans/OpenSans-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("../font/openSans/OpenSans-SemiBold.ttf") format("truetype"); }
+.font-family-bold {
+  font-family: "OpenSans-Bold", sans-serif; }
+
+.font-family-light {
+  font-family: "OpenSans-Light", sans-serif; }
+
+.font-family-regular {
+  font-family: "OpenSans-Regular", sans-serif; }
+
+.font-family-semi-bold {
+  font-family: "OpenSans-SemiBold", sans-serif; }
+
+/******************** COLOR STYLE ******************/
+/************************ ICONS STYLE******************/
+.icon {
+  width: 15px;
+  height: 15px;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  display: inline-block;
+  vertical-align: sub;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+  background-color: #828282; }
+  .icon.icon-heart {
+    mask-image: url("../icons/heart.svg");
+    -webkit-mask-image: url("../icons/heart.svg"); }
+  .icon.icon-search {
+    mask-image: url("../icons/search.svg");
+    -webkit-mask-image: url("../icons/search.svg"); }
+  .icon.icon-basket {
+    mask-image: url("../icons/shopping-cart.svg");
+    -webkit-mask-image: url("../icons/shopping-cart.svg"); }
+  .icon.icon-view {
+    mask-image: url("../icons/eye.svg");
+    -webkit-mask-image: url("../icons/eye.svg"); }
+  .icon.icon-download {
+    mask-image: url("../icons/download.svg");
+    -webkit-mask-image: url("../icons/download.svg"); }
+  .icon.icon-email {
+    mask-image: url("../icons/mail.svg");
+    -webkit-mask-image: url("../icons/mail.svg"); }
+  .icon.icon-phone {
+    mask-image: url("../icons/phone.svg");
+    -webkit-mask-image: url("../icons/phone.svg"); }
+  .icon.icon-location {
+    mask-image: url("../icons/map-pin.svg");
+    -webkit-mask-image: url("../icons/map-pin.svg"); }
+  .icon.icon-purple {
+    background-color: #5A077D; }
+  .icon.icon-green {
+    background-color: #0cca58; }
+  .icon.icon-user {
+    mask-image: url("../icons/user.svg");
+    -webkit-mask-image: url("../icons/user.svg"); }
+  .icon.icon-dashboard {
+    mask-image: url("../icons/grid.svg");
+    -webkit-mask-image: url("../icons/grid.svg"); }
+  .icon.icon-camera {
+    mask-image: url("../icons/video.svg");
+    -webkit-mask-image: url("../icons/video.svg"); }
+  .icon.icon-audio {
+    mask-image: url("../icons/voicemail.svg");
+    -webkit-mask-image: url("../icons/voicemail.svg"); }
+  .icon.icon-users {
+    mask-image: url("../icons/users.svg");
+    -webkit-mask-image: url("../icons/users.svg"); }
+  .icon.icon-speaker {
+    mask-image: url("../icons/speaker.svg");
+    -webkit-mask-image: url("../icons/speaker.svg"); }
+  .icon.icon-feather {
+    mask-image: url("../icons/feather.svg");
+    -webkit-mask-image: url("../icons/feather.svg"); }
+  .icon.icon-book {
+    mask-image: url("../icons/columns.svg");
+    -webkit-mask-image: url("../icons/columns.svg"); }
+  .icon.icon-settings {
+    mask-image: url("../icons/settings.svg");
+    -webkit-mask-image: url("../icons/settings.svg"); }
+  .icon.icon-bookmark {
+    mask-image: url("../icons/bookmark.svg");
+    -webkit-mask-image: url("../icons/bookmark.svg"); }
+
+/********************MAIN STYLE*********************/
+body {
+  background-color: #f1f1f1; }
+  body .navbar .navbar-brand p {
+    font-size: 12px; }
+  body .navbar .input-group {
+    width: 340px;
+    margin-left: 80px; }
+    body .navbar .input-group input, body .navbar .input-group button {
+      background-color: #f1f1f1; }
+  body .row .a {
+    background-color: #5A077D; }
+    body .row .a .navbar-brand {
+      border: white; }
+      body .row .a .navbar-brand img {
+        color: grey;
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        box-sizing: border-box;
+        border-radius: 5px; }
+    body .row .a .text-white p {
+      font-size: 13px; }
+    body .row .a .navbar-nav .nav-item .nav-link {
+      height: 30px;
+      position: relative; }
+      body .row .a .navbar-nav .nav-item .nav-link::before {
+        content: '';
+        width: 3px;
+        height: 0;
+        background-color: #ff4c0c;
+        position: absolute;
+        left: -20px;
+        top: 0;
+        transition: height 0.3s;
+        transition-timing-function: linear; }
+      body .row .a .navbar-nav .nav-item .nav-link:hover:before {
+        height: 100%; }
+      body .row .a .navbar-nav .nav-item .nav-link p {
+        font-size: 13px; }
+      body .row .a .navbar-nav .nav-item .nav-link .icon {
+        background-color: white; }
+  body .row .col-10 p {
+    font-size: 12px; }
+  body .row .col-10 .fff .col-3 .rounded {
+    position: relative;
+    box-shadow: 2px 2px 5px grey;
+    overflow: hidden;
+    height: 110px; }
+    body .row .col-10 .fff .col-3 .rounded button {
+      font-size: 10px;
+      padding: 3px; }
+    body .row .col-10 .fff .col-3 .rounded .rasm {
+      width: 120px;
+      height: 120px;
+      position: absolute;
+      right: -15px;
+      bottom: -15px;
+      transform: rotate(-45deg);
+      opacity: 25%; }
+  body .row .col-8 .bg-light {
+    box-shadow: 2px 2px 5px grey; }
+  body .row .col-8 img {
+    width: 100%; }
+  body .row .car img {
+    width: 100%; }
+  body .row .car .bg-light {
+    box-shadow: 2px 2px 5px grey; }
+    body .row .car .bg-light .box {
+      border: 1px #585a80;
+      width: 20px;
+      height: 20px;
+      background-color: #585a80;
+      border-radius: 50%;
+      margin-left: 5px; }
+    body .row .car .bg-light .box2 {
+      border: 1px solid lightseagreen;
+      width: 20px;
+      height: 20px;
+      background-color: lightseagreen;
+      border-radius: 50%;
+      margin-left: 5px; }
+    body .row .car .bg-light .box3 {
+      border: 1px indianred;
+      width: 20px;
+      height: 20px;
+      background-color: indianred;
+      border-radius: 50%;
+      margin-left: 5px; }
+    body .row .car .bg-light .d-flex p {
+      font-size: 15px;
+      margin-left: 5px; }
+
+/*# sourceMappingURL=hw.css.map */
